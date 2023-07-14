@@ -14,10 +14,20 @@ fun main(args: Array<String>) {
 
 //    println("Score for a => ${ScrabbleScore.scoreWord("a")}")
 
-    for (item in data()) {
-        println("Roman number for ${item[0]} -> ${RomanNumerals.value(item[0] as Int)} | <- ${item[1]} ")
 
-    }
+//    for (item in data()) {
+//        println("Roman number for ${item[0]} -> ${RomanNumerals.value(item[0] as Int)} | <- ${item[1]} ")
+//
+//    }
+//    println("Is equir -> ${Triangle(2,2, 2).isEquilateral}")
+    val matrix = Matrix2(
+        listOf(
+            listOf(1, 2, 3),
+            listOf(3, 1, 2),
+            listOf(2, 3, 1)
+        )
+    )
+    println("Saddle points => ${matrix.saddlePoints}")
 }
 fun data() = listOf(
     arrayOf(1, "I"),
